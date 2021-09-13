@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kiwi2-dev-142146-authRole",
+      "UnauthRoleArn": "arn:aws:iam::428368689382:role/amplify-kiwi2-dev-142146-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::428368689382:role/amplify-kiwi2-dev-142146-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-kiwi2-dev-142146-deployment",
+      "UnauthRoleName": "amplify-kiwi2-dev-142146-unauthRole",
+      "StackName": "amplify-kiwi2-dev-142146",
+      "StackId": "arn:aws:cloudformation:eu-central-1:428368689382:stack/amplify-kiwi2-dev-142146/90329740-1495-11ec-ae25-024668a3d744",
+      "AmplifyAppId": "dbc7ai5qghmbn"
+    }
+  }
+}
