@@ -1,8 +1,10 @@
 import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
-
+import { RouteReuseStrategy } from '@angular/router';
 import {AmplifyUIAngularModule} from "@aws-amplify/ui-angular";
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { AppRoutingModule } from './app-routing.module';
 import {Amplify} from "@aws-amplify/core";
 import awsconfig from "../aws-exports";
 
@@ -10,8 +12,8 @@ Amplify.configure(awsconfig);
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [AmplifyUIAngularModule, BrowserModule],
-  providers: [],
+  imports: [AmplifyUIAngularModule, BrowserModule,IonicModule.forRoot(), AppRoutingModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

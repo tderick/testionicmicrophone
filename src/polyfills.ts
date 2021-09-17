@@ -66,3 +66,5 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  import 'globalthis/auto';
 
  (window as any).global = window;
+
+ global.Buffer = global.Buffer || require('buffer').Buffer;
